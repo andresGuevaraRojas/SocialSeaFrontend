@@ -18,6 +18,26 @@
     font-family: sans-serif;
     margin-right: 1rem;
 }
+.header__actions > ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header__actions li{
+    margin-right: 1em;
+}
+
+.header__actions li:last-child{
+    margin-right: none;
+}
+
+.icon__action{
+    color: #0396a6;
+}
+.icon__profile{
+    color: #2b3f6c;
+}
 
 .menu{
     display: flex;
