@@ -1,6 +1,7 @@
+import style from './Post.module.css';
 function Post({title,date,image}){
     return(
-        <article>
+        <article className={style.post}>
             <h2>{title}</h2>
             <span>{date}</span>
             {

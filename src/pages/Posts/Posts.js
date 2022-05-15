@@ -1,13 +1,14 @@
 import { useParams } from "react-router-dom"
-import Post from "../components/Post/Post"
-import PostCategories from "../shared/PostCategories"
+import Post from "../../components/Post/Post"
+import PostCategories from "../../shared/PostCategories"
+import style from "./Posts.module.css"
 
 function Posts(){
 
     let params = useParams()
     let category = params.category
     return (
-        <section>
+        <section className={style.posts}>
            <h1>
                {
                    PostCategories[category]|| PostCategories.claps
