@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import PostPreview from "../../components/PostPreview/PostPreview"
 import PostCategories from "../../shared/PostCategories"
 import style from './ProfilePosts.module.css'
 function ProfilePosts() {
@@ -16,7 +17,13 @@ function ProfilePosts() {
                 }
             </h1>
             <div className={style.container}>
-                
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
             </div>
         </section>
     )

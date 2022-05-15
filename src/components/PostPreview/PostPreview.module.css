@@ -1,5 +1,6 @@
 .post{
     width: 300px;
+    cursor: pointer;
 }
 .post img{
     max-width: 100%;
