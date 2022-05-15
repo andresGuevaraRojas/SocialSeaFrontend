@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import PostPreview from "../../components/PostPreview/PostPreview"
+import PostService from "../../services/PostService"
 import PostCategories from "../../shared/PostCategories"
 import style from './ProfilePosts.module.css'
 function ProfilePosts() {
@@ -11,11 +12,10 @@ function ProfilePosts() {
 
     useEffect(()=>{
         const getPosts = ()=>{
-            setPosts([])
+            const postsData = PostService.getByUserAndCategory(12,category)
+            setPosts(postsData)
         }
-        getPosts()
-
-        console.log(posts)
+        getPosts()        
     },[category])
 
     return (
@@ -26,13 +26,11 @@ function ProfilePosts() {
                 }
             </h1>
             <div className={style.container}>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
-                <PostPreview image={'https://oceanfdn.org/wp-content/uploads/2010/08/SargassoSea-1-1200x600.jpg'}/>
+                {
+                    posts.map(post=>(
+                        <PostPreview image={post.image}/>        
+                    ))
+                }                
             </div>
         </section>
     )

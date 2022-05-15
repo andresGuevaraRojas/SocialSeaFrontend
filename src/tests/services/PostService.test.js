@@ -16,4 +16,15 @@ describe('Test for PostService Class',()=>{
 
         expect(postsOfUser.length).toBe(3)
     })
+
+    test('Get posts by userId and category',()=>{
+        const postsClapsOfUser = PostService.getByUserAndCategory(12,'claps')
+        const postsDolphinsOfUser = PostService.getByUserAndCategory(12,'dolphins')
+        const postsFluttersOfUser = PostService.getByUserAndCategory(12,'flutters')
+
+        expect(postsClapsOfUser.length).toBe(1)
+        expect(postsDolphinsOfUser.length).toBe(1)
+        expect(postsFluttersOfUser.length).toBe(1)
+
+    })
 })

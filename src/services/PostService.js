@@ -8,6 +8,9 @@ class PostService{
     static getByUser(userId){
         return posts.filter(post=>post.userId === userId)
     }
+    static getByUserAndCategory(userId,category){
+        return posts.filter(post=>post.userId === userId).filter(post=>post.category === category)
+    }
 }
 
 export default PostService
