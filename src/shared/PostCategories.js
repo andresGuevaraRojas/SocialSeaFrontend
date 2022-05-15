@@ -1,0 +1,1 @@
+export default {claps:'👏',flutter:'🦈',dolphin:'🐬'}

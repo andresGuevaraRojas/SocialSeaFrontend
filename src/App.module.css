@@ -1,0 +1,37 @@
+.header{
+    padding: 2rem 4rem;
+    background-color: var(white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--color-borders-box);
+}
+.header > span{
+    color: var(--principal-alt);
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 4rem;
+}
+.menu > ul{
+    list-style: none;    
+    padding-left: 0;
+    display: flex;
+    margin: 0;    
+    justify-content: space-between;       
+}
+
+.menu li{
+    width: 5rem;
+    display: block;
+    border-right: 1px solid var(--color-borders-box);
+    text-align: center;
+}
+.menu li>a{        
+    text-decoration: none;
+}
