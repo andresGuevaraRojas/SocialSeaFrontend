@@ -31,9 +31,9 @@ function App() {
               </Link>              
             </li>
             <li>
-              <Link onClick={()=>{setActiveAdd(true)}}>
+              <a onClick={()=>{setActiveAdd(true)}} style={{cursor:'pointer'}}>
                 <AddBoxRoundedIcon fontSize="large" className={style.icon__action}/>
-              </Link>              
+              </a>              
             </li>
             <li>
               <Link to={routes.profile.index}>

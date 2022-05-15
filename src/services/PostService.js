@@ -11,6 +11,7 @@ class PostService{
     static getByUserAndCategory(userId,category){
         return posts.filter(post=>post.userId === userId).filter(post=>post.category === category)
     }
+    
 
     static addNewPost(post){
         return [...posts,post]

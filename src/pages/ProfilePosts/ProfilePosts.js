@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useOutletContext, useParams } from "react-router-dom"
 import Post from "../../components/Post/Post"
 import PostPreview from "../../components/PostPreview/PostPreview"
 import PostService from "../../services/PostService"
@@ -11,6 +11,7 @@ function ProfilePosts() {
 
     const [posts, setPosts] = useState([])
     const [selectedPost,setSelectedPost] = useState(null)
+    const [activeAdd,setActiveAdd] = useOutletContext()
 
     const onClickPreviewPost = (id)=>{
         const post = posts.find(post=>post.id === id)
@@ -43,6 +44,10 @@ function ProfilePosts() {
             {
                 selectedPost&&
                 <Post image={selectedPost.image} location={selectedPost.location} description={selectedPost.description}/>
+            }
+            {
+                activeAdd&&
+                <p>activo</p>
             }
         </section>
     )

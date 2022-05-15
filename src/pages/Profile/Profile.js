@@ -1,10 +1,12 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, useOutletContext } from "react-router-dom"
 import AboutProfile from "../../components/AboutProfile/AboutProfile"
 import NavOfSection from "../../components/NavOfSection/NavOfSection"
 import style from "./Profile.module.css"
 import routesNav from "./routesNav"
 
 function Profile() {
+
+    const [activeAdd,setActiveAdd] = useOutletContext()
     return(
         <main className={style.main}>
             <section className={style.about}>
@@ -15,7 +17,7 @@ function Profile() {
                 />                
             </section>            
             <NavOfSection routes={routesNav}/>
-            <Outlet/>
+            <Outlet context={[activeAdd,setActiveAdd]}/>
         </main>
     )
 }
