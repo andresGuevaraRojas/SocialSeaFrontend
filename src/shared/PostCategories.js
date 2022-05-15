@@ -1,1 +1,3 @@
-export default {claps:'👏',flutters:'🦈',dolphins:'🐬'}
+const categories = {claps:'👏',flutters:'🦈',dolphins:'🐬'}
+
+export default categories

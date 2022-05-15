@@ -4,7 +4,7 @@ function Post({image,location,description}){
         <article className={style.post}>
             
             <div className={style.image__container}>
-                <img src={image}/>            
+                <img alt={''} src={image}/>            
             </div>            
             <div className={style.content}>
                 <div className={style.main}>

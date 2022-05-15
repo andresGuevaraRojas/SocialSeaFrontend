@@ -1,4 +1,4 @@
-export default {
+const routes =  {
     index:"/",
     posts:{
         index:'/posts',
@@ -13,3 +13,5 @@ export default {
         dolphins:'/profile/dolphins'        
     },
 }
+
+export default routes

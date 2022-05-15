@@ -9,6 +9,15 @@ function ProfilePosts() {
 
     const [posts, setPosts] = useState([])
 
+    useEffect(()=>{
+        const getPosts = ()=>{
+            setPosts([])
+        }
+        getPosts()
+
+        console.log(posts)
+    },category)
+
     return (
         <section className={style.posts}>
             <h1>
