@@ -1,5 +1,6 @@
 .post{
     display: flex;
+    margin-bottom: 1.2rem;
 }
 .post img{
     max-width: 600px;

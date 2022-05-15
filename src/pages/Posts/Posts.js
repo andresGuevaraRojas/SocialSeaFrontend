@@ -20,6 +20,11 @@ function Posts(){
                     location={'Playa del carmen'}
                     description={'Residuos plasticos'}                                      
                 />
+                <Post 
+                    image={'https://cdn.pixabay.com/photo/2019/11/07/08/12/sea-4608198_960_720.jpg'}   
+                    location={'Playa del carmen'}
+                    description={'Residuos plasticos'}                                      
+                />
            </div>           
         </section>
     )
