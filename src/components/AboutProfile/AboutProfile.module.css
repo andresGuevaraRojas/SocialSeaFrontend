@@ -1,0 +1,22 @@
+.container{
+
+}
+
+.image__container{
+
+}
+.image__container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-right: 50px;
+}
+.about{
+
+}
+.name{
+    display: block;
+}
+.content{
+    display: block;
+}
