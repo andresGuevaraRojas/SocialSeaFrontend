@@ -34,7 +34,7 @@ function App() {
               </Link>              
             </li>
             <li>
-              <Link to={'/'}>
+              <Link to={routes.profile}>
                 <PersonRoundedIcon fontSize="large" className={style.icon__profile}/>
               </Link>              
             </li>
