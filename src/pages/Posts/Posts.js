@@ -14,7 +14,13 @@ function Posts(){
                    PostCategories[category]|| PostCategories.claps
                }               
            </h1>
-           <Post title={'Estan vertiendo desechos en la playa X'} image={'https://cdn.pixabay.com/photo/2019/11/07/08/12/sea-4608198_960_720.jpg'} date={'15/05/2022'}/>
+           <div className={style.container}>
+                <Post 
+                    image={'https://cdn.pixabay.com/photo/2019/11/07/08/12/sea-4608198_960_720.jpg'}   
+                    location={'Playa del carmen'}
+                    description={'Residuos plasticos'}                                      
+                />
+           </div>           
         </section>
     )
 }

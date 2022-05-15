@@ -1,7 +1,31 @@
 .post{
-    
+    display: flex;
+}
+.post img{
+    max-width: 600px;
 }
 .post > h2{
     font-size: 1.4rem;
+    font-weight: bold;
     text-align: center;
+}
+.content{
+    padding: 2rem;
+    min-width: 200px;  
+}
+
+.main{
+    border-bottom: 1px solid var(--color-borders-box);
+}
+
+.main span{
+    font-weight: bold;    
+    font-size: 1.4rem;    
+}
+.main p{
+    font-size: 1.2rem;
+}
+
+.stats p{
+    font-size: 1.2rem;
 }

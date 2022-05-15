@@ -3,5 +3,9 @@
 }
 .posts h1{
     font-size: 2rem;
-    text-align: center;
+    text-align: center;    
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
