@@ -10,4 +10,10 @@ describe('Test for PostService Class',()=>{
         expect(postsDolphins.length).toBe(1)
         expect(postsFlutters.length).toBe(1)
     })
+
+    test('Get posts by userId',()=>{
+        const postsOfUser = PostService.getByUser(12)
+
+        expect(postsOfUser.length).toBe(3)
+    })
 })

@@ -4,6 +4,10 @@ class PostService{
     static getByCategory(category){
         return posts.filter(post=>post.category === category);
     }
+
+    static getByUser(userId){
+        return posts.filter(post=>post.userId === userId)
+    }
 }
 
 export default PostService
