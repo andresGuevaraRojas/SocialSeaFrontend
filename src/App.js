@@ -7,7 +7,10 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import MapRoundedIcon from '@mui/icons-material/MapRounded';
 import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import { useState } from "react";
 function App() {
+
+  const [activeAdd,setActiveAdd] = useState(false)
   return (
     <>
       <header className={style.header}>
@@ -28,7 +31,7 @@ function App() {
               </Link>              
             </li>
             <li>
-              <Link to={'/'}>
+              <Link onClick={()=>{setActiveAdd(true)}}>
                 <AddBoxRoundedIcon fontSize="large" className={style.icon__action}/>
               </Link>              
             </li>
@@ -40,7 +43,7 @@ function App() {
           </ul>
         </div>
       </header>      
-      <Outlet />
+      <Outlet context={[activeAdd,setActiveAdd]}/>
     </>
   );
 }
