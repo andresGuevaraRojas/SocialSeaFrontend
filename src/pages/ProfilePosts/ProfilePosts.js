@@ -16,7 +16,7 @@ function ProfilePosts() {
         getPosts()
 
         console.log(posts)
-    },category)
+    },[category])
 
     return (
         <section className={style.posts}>
