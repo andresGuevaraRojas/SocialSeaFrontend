@@ -18,10 +18,26 @@ function App() {
         </div>        
         <div className={style.header__actions}>
           <ul>
-            <li><HomeRoundedIcon fontSize="large" className={style.icon__action}/></li>
-            <li><MapRoundedIcon fontSize="large" className={style.icon__action}/></li>
-            <li><AddBoxRoundedIcon fontSize="large" className={style.icon__action}/></li>
-            <li><PersonRoundedIcon fontSize="large" className={style.icon__profile}/></li>
+            <li>
+              <Link to={'/'}>
+                <HomeRoundedIcon fontSize="large" className={style.icon__action}/>
+              </Link>              
+            </li>
+            <li>
+              <Link to={'/'}>
+                <MapRoundedIcon fontSize="large" className={style.icon__action}/>
+              </Link>              
+            </li>
+            <li>
+              <Link to={'/'}>
+                <AddBoxRoundedIcon fontSize="large" className={style.icon__action}/>
+              </Link>              
+            </li>
+            <li>
+              <Link to={'/'}>
+                <PersonRoundedIcon fontSize="large" className={style.icon__profile}/>
+              </Link>              
+            </li>
           </ul>
         </div>
       </header>
