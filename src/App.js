@@ -4,6 +4,7 @@ import style from './App.module.css';
 import SearhBarInput from "./components/SearchBarInput/SearchBarInput";
 import routes from "./routes";
 import PostCategories from "./shared/PostCategories";
+import Home from "@mui/icons-material/Home";
 function App() {
   return (
     <>
@@ -13,7 +14,12 @@ function App() {
           <SearhBarInput/>
         </div>        
         <div style={style.header__actions}>
-
+          <ul>
+            <li><Home/></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
       </header>
 
