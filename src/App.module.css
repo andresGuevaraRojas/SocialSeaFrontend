@@ -38,27 +38,3 @@
 .icon__profile{
     color: #2b3f6c;
 }
-
-.menu{
-    display: flex;
-    justify-content: center;
-    padding: 2rem 4rem;
-}
-.menu > ul{
-    list-style: none;    
-    padding-left: 0;
-    display: flex;
-    margin: 0;    
-    justify-content: space-between;       
-}
-
-.menu li{
-    width: 5rem;
-    display: block;
-    border-right: 1px solid var(--color-borders-box);
-    text-align: center;
-}
-.menu li>a{        
-    text-decoration: none;
-    padding: 1rem;
-}

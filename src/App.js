@@ -3,7 +3,6 @@ import { Link, Outlet } from "react-router-dom";
 import style from './App.module.css';
 import SearhBarInput from "./components/SearchBarInput/SearchBarInput";
 import routes from "./routes";
-import PostCategories from "./shared/PostCategories";
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import MapRoundedIcon from '@mui/icons-material/MapRounded';
 import AddBoxRoundedIcon from '@mui/icons-material/AddBoxRounded';
@@ -40,22 +39,7 @@ function App() {
             </li>
           </ul>
         </div>
-      </header>
-
-      <nav className={style.menu}>
-        <ul>
-            <li>
-              <Link to={routes.posts.claps}>{PostCategories.claps}</Link>
-            </li>
-            <li>
-            <Link to={routes.posts.dolphins}>{PostCategories.dolphins}</Link>  
-            </li>
-            <li>
-            <Link to={routes.posts.flutters}>{PostCategories.flutters}</Link>
-            </li>
-          </ul>
-      </nav>
-
+      </header>      
       <Outlet />
     </>
   );
