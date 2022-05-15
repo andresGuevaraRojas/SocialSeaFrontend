@@ -1,13 +1,20 @@
 import { Link, Outlet } from "react-router-dom";
 
 import style from './App.module.css';
+import SearhBarInput from "./components/SearchBarInput/SearchBarInput";
 import routes from "./routes";
 import PostCategories from "./shared/PostCategories";
 function App() {
   return (
     <>
       <header className={style.header}>
-        <span>SocialSea</span>        
+        <div className={style.header__main}>
+          <span>SocialSea</span>        
+          <SearhBarInput/>
+        </div>        
+        <div style={style.header__actions}>
+
+        </div>
       </header>
 
       <nav className={style.menu}>

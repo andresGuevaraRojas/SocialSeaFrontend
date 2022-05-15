@@ -6,12 +6,17 @@
     align-items: center;
     border-bottom: 1px solid var(--color-borders-box);
 }
-.header > span{
+.header__main{
+    display: flex;
+    align-items: center;
+}
+.header__main > span{
     color: var(--principal-alt);
     font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
-    font-family: sans-serif
+    font-family: sans-serif;
+    margin-right: 1rem;
 }
 
 .menu{
