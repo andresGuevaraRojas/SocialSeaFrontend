@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom"
 import AboutProfile from "../../components/AboutProfile/AboutProfile"
 import NavOfSection from "../../components/NavOfSection/NavOfSection"
 import style from "./Profile.module.css"
@@ -14,6 +15,7 @@ function Profile() {
                 />                
             </section>            
             <NavOfSection routes={routesNav}/>
+            <Outlet/>
         </main>
     )
 }
