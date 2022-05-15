@@ -1,23 +1,8 @@
 import AboutProfile from "../../components/AboutProfile/AboutProfile"
 import NavOfSection from "../../components/NavOfSection/NavOfSection"
-import routes from "../../routes"
-import PostCategories from "../../shared/PostCategories"
 import style from "./Profile.module.css"
+import routesNav from "./routesNav"
 
-const routesNav = [
-    {
-        path:'/',
-        text:PostCategories.claps
-    },
-    {
-        path:'/',
-        text:PostCategories.dolphins
-    },
-    {
-        path:'/',
-        text:PostCategories.flutters
-    },
-]
 function Profile() {
     return(
         <main className={style.main}>
