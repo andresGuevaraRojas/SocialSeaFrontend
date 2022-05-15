@@ -2,10 +2,10 @@ import style from './Post.module.css';
 function Post({image,location,description}){
     return(
         <article className={style.post}>
-            {
-                image&&
-                <img src={image}/>
-            }
+            
+            <div className={style.image__container}>
+                <img src={image}/>            
+            </div>            
             <div className={style.content}>
                 <div className={style.main}>
                     <span>{location}</span>

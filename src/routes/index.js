@@ -4,6 +4,7 @@ export default {
         index:'/posts',
         claps:'/posts/claps',
         flutters:'/posts/flutters',
-        dolphins:'/posts/dolphins'
+        dolphins:'/posts/dolphins'        
     },
+    profile:'/profile'
 }
