@@ -21,7 +21,7 @@ function Posts(){
                     description={'Residuos plasticos'}                                      
                 />
                 <Post 
-                    image={'https://cdn.pixabay.com/photo/2019/11/07/08/12/sea-4608198_960_720.jpg'}   
+                    image={'https://www.worldbank.org/content/dam/photos/780x439/2022/jan-2/deep-blue-sea_shutterstock_1512728810.jpg'}   
                     location={'Playa del carmen'}
                     description={'Residuos plasticos'}                                      
                 />
