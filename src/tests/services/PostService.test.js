@@ -27,4 +27,21 @@ describe('Test for PostService Class',()=>{
         expect(postsFluttersOfUser.length).toBe(1)
 
     })
+
+    test('Add a new post',()=>{
+
+        const newPost = {            
+            id:5,
+            userId:12,
+            category:'dolphins',
+            image:'https://img.freepik.com/free-photo/beautiful-shot-sea-with-mountain-distance-clear-sky_181624-2248.jpg?size=626&ext=jpg&ga=GA1.2.1518270500.1634515200',
+            location:'Playa Tortuga',
+            description:'Compre esto alternativo a X'
+        }
+
+
+        const posts = PostService.addNewPost(newPost)       
+
+        expect(posts.length).toBe(5)        
+    })
 })
