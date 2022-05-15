@@ -33,7 +33,7 @@ function App() {
               </Link>              
             </li>
             <li>
-              <Link to={routes.profile}>
+              <Link to={routes.profile.index}>
                 <PersonRoundedIcon fontSize="large" className={style.icon__profile}/>
               </Link>              
             </li>

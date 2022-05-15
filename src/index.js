@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Posts from './pages/Posts/Posts';
 import Profile from './pages/Profile/Profile';
+import ProfilePosts from './pages/ProfilePosts/ProfilePosts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,10 @@ root.render(
         <Route path='/' element={<App/>}>
           <Route index element={<Posts/>}/>
           <Route path='posts/:category' element={<Posts/>}/> 
-          <Route path='profile' element={<Profile/>}/>    
+          <Route path='profile' element={<Profile/>}>
+              <Route index element={<ProfilePosts/>}/>
+              <Route path=':category' element={<ProfilePosts/>}/>
+          </Route>    
         </Route>  
       </Routes>      
     </BrowserRouter>      

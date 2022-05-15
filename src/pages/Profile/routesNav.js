@@ -2,15 +2,15 @@ import routes from "../../routes"
 import PostCategories from "../../shared/PostCategories"
 const routesNav = [
     {
-        path:'/',
+        path:routes.profile.claps,
         text:PostCategories.claps
     },
     {
-        path:'/',
+        path:routes.profile.dolphins,
         text:PostCategories.dolphins
     },
     {
-        path:'/',
+        path:routes.profile.flutters,
         text:PostCategories.flutters
     },
 ]

@@ -6,5 +6,10 @@ export default {
         flutters:'/posts/flutters',
         dolphins:'/posts/dolphins'        
     },
-    profile:'/profile'
+    profile:{
+        index:'/profile',
+        claps:'/profile/claps',
+        flutters:'/profile/flutters',
+        dolphins:'/profile/dolphins'        
+    },
 }
