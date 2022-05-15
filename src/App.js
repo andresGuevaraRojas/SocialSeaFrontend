@@ -23,10 +23,10 @@ function App() {
               <Link to={routes.posts.claps}>{PostCategories.claps}</Link>
             </li>
             <li>
-            <Link to={routes.posts.dolphins}>{PostCategories.dolphin}</Link>  
+            <Link to={routes.posts.dolphins}>{PostCategories.dolphins}</Link>  
             </li>
             <li>
-            <Link to={routes.posts.flutters}>{PostCategories.flutter}</Link>
+            <Link to={routes.posts.flutters}>{PostCategories.flutters}</Link>
             </li>
           </ul>
       </nav>
