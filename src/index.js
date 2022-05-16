@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Posts from './pages/Posts/Posts';
@@ -10,7 +10,7 @@ import ProfilePosts from './pages/ProfilePosts/ProfilePosts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<App/>}>
           <Route index element={<Posts/>}/>
@@ -21,7 +21,7 @@ root.render(
           </Route>    
         </Route>  
       </Routes>      
-    </BrowserRouter>      
+    </HashRouter>      
 );
 
 // If you want to start measuring performance in your app, pass a function

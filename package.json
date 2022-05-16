@@ -1,7 +1,7 @@
 {
   "name": "socialsea-frontend",
   "version": "0.1.0",
-  "home":"https://andresGuevaraRojas.github.io/SocialSeaFrontend",
+  "homepage":"https://andresguevararojas.github.io/SocialSeaFrontend",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
