@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Outlet, useOutletContext } from "react-router-dom"
 import AboutProfile from "../../components/AboutProfile/AboutProfile"
 import NavOfSection from "../../components/NavOfSection/NavOfSection"
@@ -6,6 +7,7 @@ import routesNav from "./routesNav"
 
 function Profile() {
 
+    const [posts,setPosts] = useState([])
     const [activeAdd,setActiveAdd] = useOutletContext()
     return(
         <main className={style.main}>
@@ -17,7 +19,7 @@ function Profile() {
                 />                
             </section>            
             <NavOfSection routes={routesNav}/>
-            <Outlet context={[activeAdd,setActiveAdd]}/>
+            <Outlet context={[activeAdd,setActiveAdd,posts,setPosts]}/>
         </main>
     )
 }

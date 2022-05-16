@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useOutletContext, useParams } from "react-router-dom"
+import AddPostModal from "../../components/AddPostModal/AddPostModal"
 import Post from "../../components/Post/Post"
 import PostPreview from "../../components/PostPreview/PostPreview"
 import PostService from "../../services/PostService"
@@ -16,6 +17,15 @@ function ProfilePosts() {
     const onClickPreviewPost = (id)=>{
         const post = posts.find(post=>post.id === id)
         setSelectedPost(post)
+    }
+
+    const onSave = (value)=>{
+        PostService.addNewPost(value)
+        setPosts([...posts,value])
+        setActiveAdd(false)
+    }
+    const onCancel = ()=>{
+        setActiveAdd(false)
     }
 
     useEffect(()=>{
@@ -47,7 +57,7 @@ function ProfilePosts() {
             }
             {
                 activeAdd&&
-                <p>activo</p>
+                <AddPostModal onSave={onSave} onCancel={onCancel}/>
             }
         </section>
     )
